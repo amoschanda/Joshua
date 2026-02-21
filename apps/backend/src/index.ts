@@ -9,6 +9,10 @@ import { authenticate, AuthRequest } from './middleware/auth.js';
 import authRoutes from './routes/auth.js';
 import ridesRoutes from './routes/rides.js';
 import paymentsRoutes from './routes/payments.js';
+import driversRoutes from './routes/drivers.js';
+import ridersRoutes from './routes/riders.js';
+import adminRoutes from './routes/admin.js';
+import analyticsRoutes from './routes/analytics.js';
 
 dotenv.config();
 
@@ -30,6 +34,10 @@ app.use(express.json());
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/rides', ridesRoutes);
 app.use('/api/v1/payments', paymentsRoutes);
+app.use('/api/v1/drivers', driversRoutes);
+app.use('/api/v1/riders', ridersRoutes);
+app.use('/api/v1/admin', adminRoutes);
+app.use('/api/v1/analytics', analyticsRoutes);
 
 // Health check
 app.get('/health', (req, res) => {
