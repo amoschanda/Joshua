@@ -1,0 +1,14 @@
+{
+  "extends": "@joshua/tsconfig/react-native.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@joshua/ui": ["../../packages/ui/src"],
+      "@joshua/core": ["../../packages/core/src"],
+      "@joshua/hooks": ["../../packages/hooks/src"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"],
+  "exclude": ["node_modules"]
+}
