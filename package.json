@@ -8,7 +8,12 @@
   ],
   "scripts": {
     "dev": "turbo run dev",
+    "dev:backend": "cd apps/backend && pnpm dev",
+    "dev:driver": "cd apps/driver-app && pnpm dev",
+    "dev:rider": "cd apps/rider-app && pnpm dev",
     "build": "turbo run build",
+    "build:backend": "cd apps/backend && pnpm build",
+    "start:backend": "cd apps/backend && pnpm start",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
     "typecheck": "turbo run typecheck",
@@ -33,7 +38,7 @@
     "node": ">=18.0.0",
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.15.4"
+  "packageManager": "pnpm@8.15.4",
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "eslint --fix",
