@@ -1,0 +1,148 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "FREEMAN MOBILE CLEANING",
+      "archetype": "The Performance Pro (Industrial Premium)",
+      "core_values": ["Reliability", "Efficiency", "Heavy-Duty Clean", "Premium Service"],
+      "emotional_tone": "Professional, Trustworthy, High-Contrast, Bold"
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Barlow Condensed, sans-serif",
+        "body": "Manrope, sans-serif"
+      },
+      "weights": {
+        "headings": "700 (Bold) or 800 (ExtraBold)",
+        "body": "400 (Regular) and 500 (Medium)"
+      },
+      "scale": {
+        "h1": "text-5xl md:text-7xl tracking-tighter uppercase",
+        "h2": "text-3xl md:text-5xl tracking-tight uppercase",
+        "h3": "text-xl md:text-2xl font-bold uppercase",
+        "body": "text-base md:text-lg leading-relaxed"
+      },
+      "imports": [
+        "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Manrope:wght@400;500;700&display=swap"
+      ]
+    },
+    "colors": {
+      "palette": {
+        "primary": {
+          "DEFAULT": "#FFD700",
+          "hover": "#E6C200",
+          "foreground": "#000000"
+        },
+        "background": {
+          "default": "#09090B",
+          "paper": "#18181B",
+          "light": "#FFFFFF"
+        },
+        "text": {
+          "primary": "#FFFFFF",
+          "secondary": "#A1A1AA",
+          "inverse": "#09090B"
+        },
+        "border": {
+          "default": "#27272A",
+          "active": "#FFD700"
+        },
+        "status": {
+          "success": "#22C55E",
+          "error": "#EF4444"
+        }
+      },
+      "usage_rules": {
+        "hero_section": "bg-[#09090B] text-white",
+        "booking_form": "bg-white text-black (for maximum readability)",
+        "service_cards": "bg-[#18181B] border border-[#27272A] hover:border-[#FFD700]",
+        "cta_buttons": "bg-[#FFD700] text-black font-bold hover:bg-[#E6C200] uppercase tracking-wide"
+      }
+    },
+    "layout": {
+      "spacing": {
+        "container_padding": "px-4 md:px-8 lg:px-12",
+        "section_gap": "py-16 md:py-24",
+        "grid_gap": "gap-6 md:gap-8"
+      },
+      "grid_system": {
+        "services": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 auto-rows-[300px]",
+        "bento_highlight": "col-span-1 md:col-span-2 row-span-2"
+      },
+      "border_radius": {
+        "buttons": "rounded-none (Sharp/Industrial) or rounded-sm",
+        "cards": "rounded-md",
+        "inputs": "rounded-md"
+      }
+    },
+    "components": {
+      "buttons": {
+        "primary": "bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8 text-lg uppercase font-bold tracking-wider transition-all duration-300",
+        "secondary": "bg-transparent border-2 border-white/20 text-white hover:bg-white/10 h-12 px-8 uppercase font-bold tracking-wider"
+      },
+      "cards": {
+        "service_card": "group relative overflow-hidden bg-zinc-900 border border-zinc-800 hover:border-primary/50 transition-all duration-300 flex flex-col justify-end p-6 h-full"
+      },
+      "inputs": {
+        "default": "bg-zinc-50 border-zinc-200 focus:border-primary focus:ring-primary text-zinc-900 h-12"
+      }
+    },
+    "motion": {
+      "hover_effects": "transform hover:-translate-y-1 transition-transform duration-300",
+      "page_transition": "animate-in fade-in slide-in-from-bottom-4 duration-500",
+      "micro_interactions": "active:scale-95 transition-transform"
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_bg": "https://images.unsplash.com/photo-1638731006970-3a2139643b5c?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "services": {
+        "car_wash": "https://images.unsplash.com/photo-1761312834150-4beefff097a7?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "home_cleaning": "https://images.unsplash.com/photo-1597665863042-47e00964d899?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "office_cleaning": "https://images.unsplash.com/photo-1559209537-dafe2fe2886b?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "landscaping": "https://images.unsplash.com/photo-1761958151634-2faec6ce4d9a?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "laundry": "https://images.unsplash.com/photo-1765015981399-8d024b928fb2?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "carpet_cleaning": "https://images.unsplash.com/photo-1597406462638-5700a53b53d8?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "garden_work": "https://images.unsplash.com/photo-1759496607068-f2892afdaf23?crop=entropy&cs=srgb&fm=jpg&q=85"
+      }
+    },
+    "icons": "Use Lucide React icons (Wrench, Car, Home, Building, Shovel, Shirt, Trash2, etc.)"
+  },
+  "pages": {
+    "home": {
+      "sections": [
+        "Hero: Full screen, dark bg, bold gold text 'FREEMAN MOBILE CLEANING', CTA 'Book Service'",
+        "Services Grid: Bento layout of top services",
+        "Why Us: 3-column feature list (Reliable, Fast, Professional)",
+        "CTA Strip: Yellow background, black text"
+      ]
+    },
+    "services_listing": {
+      "layout": "Grid of all 21 services. Each card has icon/image + title + 'Book Now' button."
+    },
+    "booking": {
+      "steps": [
+        "1. Select Service (if not already selected)",
+        "2. Select Date & Time (Calendar + Time Slots)",
+        "3. Upload Photo (Drag & Drop area)",
+        "4. Contact Details (Name, Phone, Address)",
+        "5. Confirmation"
+      ],
+      "style": "Clean white card on dark background or full white page for focus."
+    }
+  },
+  "instructions_to_main_agent": [
+    "Use the 'Barlow Condensed' font for all headings to give that industrial/professional look.",
+    "Ensure the Gold (#FFD700) is used for primary actions and highlights, but don't overuse it on backgrounds (eye fatigue).",
+    "The Booking Flow must be frictionless. No login required.",
+    "Use Shadcn UI for the complex interactive elements (Calendar, Dialog, Form) but style them to match the theme (square corners, bold borders).",
+    "For the 21 services, if you don't have a specific image for a niche service (e.g., 'Mattress Cleaning'), use a generic 'Home Cleaning' or 'Interior' image from the list or a relevant Lucide Icon.",
+    "Implement a 'File Upload' component in the booking form that accepts images.",
+    "Ensure mobile responsiveness is perfect - large touch targets for the calendar and time slots."
+  ],
+  "universal_guidelines": [
+    "Do not use gradients for the yellow/black theme. Stick to solid, bold colors.",
+    "Use 24px-32px padding inside cards.",
+    "Add 'data-testid' to all interactive elements.",
+    "Use 'sonner' for toast notifications."
+  ]
+}
